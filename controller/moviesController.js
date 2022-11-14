@@ -3,21 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.moviesController = void 0;
 const Movies_1 = require("../models/Movies");
 class moviesController {
-    //  constructor( 
-    //     public id_movie: number,
-    //     public title: string,
-    //     public budget: number,
-    //     public homepage: string,
-    //     public overview: string,
-    //     public popularity: number,
-    //     public release_date: Date,
-    //     public revenue: number,
-    //     public runtime: number,
-    //     public movie_status: string,
-    //     public tagline: string,
-    //     public vote_average: number,
-    //     public vote_count: number)
-    // {};
     async findMovieById(req, res) {
         const id = req.params.id;
         const findMovieById = await Movies_1.Movies.findByPk(id);
